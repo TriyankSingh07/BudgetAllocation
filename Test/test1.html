@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example 3</title>
+    <style>
+        .delete-btn {
+            margin-left: 10px;
+            cursor: pointer;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="list-container">
+        <ul id="item-list">
+            <li>Item 1 <span class="delete-btn" onclick="deleteItem(this)">✖</span></li>
+            <li>Item 2 <span class="delete-btn" onclick="deleteItem(this)">✖</span></li>
+        </ul>
+    </div>
+    <button onclick="addItem()">Add Item</button>
+
+    <script>
+        function addItem() {
+            // Create a new list item
+            var newItem = document.createElement('li');
+            newItem.innerHTML = 'New Item <span class="delete-btn" onclick="deleteItem(this)">✖</span>';
+            
+            // Add the new item to the list
+            document.getElementById('item-list').appendChild(newItem);
+        }
+
+        function deleteItem(element) {
+            // Remove the parent list item
+            element.parentElement.remove();
+        }
+    </script>
+</body>
+</html>

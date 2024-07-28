@@ -1,0 +1,66 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+
+    background-color: #A7D7C5;
+    margin:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family:Arial, sans-serif;   
+}
+
+.card{
+    background-color: white;
+    border-radius: 25px;
+    box-shadow:0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    box-shadow:2px 2px;
+}
+
+.card h3, .card p {
+    margin: 0 0 9px 0; /* Add some margin to separate text elements */
+}
+
+.card h2{
+    color: #333333;
+}
+
+.frm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Use gap to create space between children elements */
+    align-items: center;
+}
+
+.frm input[type="text"]{
+    width: 150px;
+    padding:10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    align-items: center;
+}
+
+/* .frm input[type="text"]:first-of-type {
+    margin-bottom: 10px; /* Add less margin to create space between the first text field and the second text field 
+    } */
+
+
+.frm button{
+    background-color: #A7D7C5;
+    border-radius: 7px;
+    width: 150px;
+    height: 35px;
+    align-items: center;
+    color:white;
+}

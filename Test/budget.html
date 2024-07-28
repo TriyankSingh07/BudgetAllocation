@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget App</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Budget App</h2>
+        <form id="budget-form">
+            <label for="budget">Your Budget: </label>
+            <input type="number" id="budget" placeholder="Enter Your Budget">
+            <button type="submit">Set Budget</button>
+        </form>
+
+        <form id="expense-form">
+            <label for="expense-details">Expense Details: </label>
+            <input type="text" id="expense-details" placeholder="Enter Expense Details">
+            <label for="expense-amount">Expense Amount: </label>
+            <input type="number" id="expense-amount" placeholder="Enter Expense Amount">
+            <button type="submit">Add Expense</button>
+        </form>
+
+        <div class="summary">
+            <h3>Summary</h3>
+            <p>Total Budget: $<span id="total-budget">0</span></p>
+            <p>Total Expenses: $<span id="total-expenses">0</span></p>
+            <p>Remaining Balance: $<span id="remaining-balance">0</span></p>
+        </div>
+
+        <div class="expenses">
+            <h3>Expenses</h3>
+            <ul id="expenses-list"></ul>
+        </div>
+    </div>
+
+    <script src="budget2.js"></script>
+</body>
+</html>
